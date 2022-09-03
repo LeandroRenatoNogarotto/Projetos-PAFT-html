@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>RESERVA DE HOTEL</title>
+</head>
+<body>
+    <h1>RESERVA DE HOTEL</h1>
+    <form action="/login" method="get">
+    <fieldset>
+        <p>
+            <label for="username" >Nome completo:</label>
+            <input type="text" id="username" name="username" placeholder="enter your username">
+        </p>
+    
+        
+        <label for="data_de_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_de_nascimento">
+        
+        <input type="reset">
+        <br>
+        <p>
+            <label for="phone" >telefone:</label>
+            <input type="tel" id="phone" name="phone"
+            pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+        </p>
+        <p>
+            <label>numero de fidelidade:
+                <input type="number" name="number"
+                min="1" max="999">
+            </label>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <p>
+            <label for="data_de_entrada">Data de entrada:</label>
+            <input type="datetime-local" id="data_de_entrada">
+        </p>
+    
+        <p>
+            <label for="Motivo">Motivo da viagem:</label>
+            <br>
+            <input type="radio" name="mot" id="turismo" value="turismo">
+            <label for="turismo">turismo</label>
+            <input type="radio" name="mot" id="trabalho" value="trabalho">
+            <label for="trabalho">trabalho</label>
+            <input type="radio" name="mot" id="outro" value="outro">
+            <label for="outro">outro</label>
+        <p>
+            <label>numero de noites:
+                <input type="number" name="number"
+                min="1" max="50">
+            </label>
+        </p>
+        <p>
+            <label for="select">Tipo de quarto:</label>
+            <select name="select" id="select">
+                <option value="casal">Casal</option>
+                <option value="casal_luxo">Casal Luxo</option>
+                <option value="Solteiro">Solteiro</option>
+                <option value="Solteiro_luxo">Solteiro Luxo</option>
+                <option value="Familia">Familia</option>
+                <option value="Familia Luxo">Familia Luxo</option>
+            </select>
+        </p>
+        <p>
+            <label>numero de pessoas:
+                <input type="number" name="number"
+                min="1" max="10">
+            </label>
+        </p>
+        <p>
+            <label>numero de crianças:
+                <input type="number" name="number"
+                min="1" max="10">
+            </label>
+        </p>
+        <p>
+            <label for="select">Forma de Pagamento:</label>
+            <br>
+            <select name="select" id="select" multiple>
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Debito">Debito</option>
+                <option value="Credito">Credito</option>
+                <option value="Boleto">Boleto</option>
+                <option value="PIX">PIX</option>
+                <option value="Bitcoin">Bitcoin</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </p>
+        <p>
+            <label for="textarea">Requerimentos especiais:</label>
+            <textarea rows="5" cols="80" name="textarea" id="texarea">
+            </textarea>
+        </p>
+    
+        <p>
+            <label for="Expectativa para o Hotel">Expectativa para o Hotel</label>
+            <input type="range" id="range" min="1" max="100" name="range">
+        </p>
+    
+        <p>
+            <label for="agree">Termo de compromisso:</label>
+            <input type="checkbox" name="agree">
+            <label for="agree">I agree</label>
+         </p>
+    </fieldset>
+        <button>Submit</button>
+        <button type="submit">Submit Again</button>
+        <button type="button">Nothing Happens</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <h3>Search on google</h3>
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <!--
+        Isto é um comentário
+    -->
+
+    <button>Search Google</button>
+    <a href="#username">go to username</a>
+</body>
+</html>
