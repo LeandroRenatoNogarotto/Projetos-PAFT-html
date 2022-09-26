@@ -1,0 +1,60 @@
+*{
+    border-radius: 20px;
+    margin: 5px;
+    color: white;
+    text-transform: lowercase; 
+    font-family: system-ui;
+}
+
+header, footer{
+    background-color: #1e90ff;
+    padding: 15px;
+    box-shadow: 0px -5px 5px 5px inset #057bed;
+}
+main{
+    background-color: #3cb371;
+    box-shadow: 0px -5px 5px 5px inset #3c9564;
+}
+
+#secaoI{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    margin: 20px;
+}
+
+div{
+    background-color: #2f8d59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+    font-size: 1.7em;    
+    margin: 20px;
+    box-shadow: 0px -10px 5px 5px inset #28794c;
+}
+
+main > h1, #sidebar > h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+#conteudo{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin: 0px;
+}
+
+#sidebar{
+    background-color: #ff6348;
+    box-shadow: 0px -5px 5px 5px inset #e32a0b;   
+}
+
+footer{
+    background-color: #4169e1;
+    box-shadow: 0px -5px 5px 5px inset #2a51c7;
+}
+
+body{
+    grid-template-rows: 20% 60% 20%;
+}
